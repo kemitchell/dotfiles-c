@@ -5,6 +5,7 @@ build-essential
 clang
 cscope
 cutils
+flawfinder
 gdb
 peg
 splint
