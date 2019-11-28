@@ -1,0 +1,11 @@
+#!/bin/bash
+cat <<PACKAGES | sudo xargs apt-get install -y
+bison
+build-essential
+clang
+cscope
+cutils
+gdb
+peg
+splint
+PACKAGES
