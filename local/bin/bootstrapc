@@ -9,4 +9,5 @@ flawfinder
 gdb
 peg
 splint
+valgrind
 PACKAGES
