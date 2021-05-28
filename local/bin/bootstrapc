@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+if command -v apt >/dev/null; then
 cat <<PACKAGES | sudo xargs apt-get install -y
 bison
 build-essential
@@ -11,3 +12,7 @@ peg
 splint
 valgrind
 PACKAGES
+elif command -v pacman >/dev/null; then
+  yes | sudo pacman -S bison clang cscope flawfinder gdb peg splint valgrind
+fi
+
